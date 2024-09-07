@@ -1,0 +1,860 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Martel+Sans&family=Poppins:wght@200&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+}
+body {
+  background-color: black;
+}
+
+.mainnav {
+  background-image: url(images/mainbg.jpg);
+  /* height: 120vh; */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: max(2000px, 150vw);
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
+}
+.Shadow {
+  position: absolute;
+  top: 0;
+  opacity: 0.77;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #0f0f0f;
+}
+.nav {
+  height: 15vh;
+  width: 100%;
+  max-width: 73vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .logo {
+  position: relative;
+  z-index: 10;
+}
+.nav .navbtn {
+  position: relative;
+  z-index: 10;
+}
+img {
+  color: #ff0000ec;
+}
+.navbtn button {
+  border-radius: 6px;
+}
+.NavBtn1 {
+  margin: 6px;
+  padding: 10px 30px 10px 30px;
+  background-color: #0f0f0f;
+  color: white;
+  font-size: 13px;
+  border: 0.5px solid white;
+}
+.NavBtn2 {
+  margin: 6px;
+  padding: 10px 21px 10px 19px;
+  background-color: red;
+  border: none;
+  color: white;
+}
+.NavBtn2:hover {
+  background-color: rgba(158, 10, 10, 0.726);
+  transition: 1s;
+  cursor: pointer;
+}
+.formbtn:hover {
+  background-color: rgba(158, 10, 10, 0.726);
+  transition: 1s;
+  cursor: pointer;
+}
+.content {
+  /* max-width: 69vw; */
+  height: 100vh;
+  /* margin: 167px auto; */
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.content h2 {
+  color: white;
+  font-size: 56px;
+}
+.content h2 div {
+  text-align: center;
+}
+.line2 {
+  margin-top: 15px;
+  font-size: 25px;
+  color: white;
+  /* font-weight: bold; */
+}
+.line3 {
+  margin-top: 20px;
+  font-size: 23px;
+  color: white;
+  /* font-weight: bold; */
+}
+.form {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.form input {
+  margin-right: 13px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #0f0f0f;
+  border: 1px solid white;
+  color: rgb(201, 31, 31);
+  width: 38%;
+  padding: 20px;
+  /* outline: 2px solid white; */
+}
+::placeholder {
+  color: white;
+  font-size: 15px;
+ 
+}
+.formbtn {
+  padding: 15px 20px 17px 20px;
+  border-radius: 5px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-weight: bold;
+  /* width: 21%; */
+  font-size: 23px;
+}
+.Breakpt {
+  height: 1vh;
+  width: 100%;
+  background-color: rgb(49, 48, 48);
+}
+.Firstgrid,
+.Secondgrid,
+.thirdgrid {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr;
+  max-width: 73vw;
+  margin: auto;
+  padding: 3rem 0rem;
+}
+
+.FGridcol1,
+.thirdgrid1 {
+  /* margin-left: 30%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /* border: 2px solid yellow; */
+}
+.FGridcol1 h2 {
+  font-size: 3rem;
+}
+.FGridcol1 p {
+  font-size: 25px;
+  margin-left: 87px;
+  margin-right: 17px;
+}
+.FGridcol2 {
+  padding: 20px;
+  /* border: 2px solid skyblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.FGridcol2 img {
+  width: 100%;
+  /* background: url(asset/videos/video1.m4v) ; */
+}
+.video1 {
+  position: absolute;
+  max-width: 67%;
+  top: 24%;
+  left: 16%;
+}
+
+.SGridcol1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 6%;
+}
+.SGridcol1 img {
+  width: 100%;
+}
+.SGridcol2,
+.thirdcol1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 10%; */
+  color: white;
+}
+.SGridcol2 h2 {
+  /* color: white;
+  font-size: 3.5rem;
+  line-height: 1;
+  width: 81%;
+  font-weight: bolder;
+  margin-right: 103px; */
+  color: white;
+  font-size: 3rem;
+  line-height: 1;
+  width: 94%;
+  font-weight: bolder;
+  margin-right: 7px;
+}
+
+.SGridcol2,
+p {
+  font-size: 25px;
+  margin-top: 5vh;
+  width: 95%;
+}
+.thirdcol1 p {
+  width: 95%;
+}
+
+.innercard {
+  border-radius: 21px;
+  height: 7vw;
+  background-color: black;
+  position: absolute;
+  top: 69%;
+  left: 17%;
+  width: 56%;
+  border: 3px solid rgb(49, 48, 48);
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 0.5fr;
+  padding: 0.5rem;
+}
+.imgcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgcard img {
+  width: 65%;
+}
+.DowloadBtn img {
+  width: 4vw;
+}
+.CardContent {
+  color: white;
+}
+.DowloadBtn {
+  color: white;
+}
+.thirdcol1 h2 {
+  font-size: 3rem;
+}
+.thirdcol1 h2 {
+  font-size: 3rem;
+  width: 100%;
+  font-weight: bold;
+}
+.thirdcol1 p {
+  font-size: 28px;
+}
+.thirdcol2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.video2 {
+  position: absolute;
+  max-width: 22vw;
+  height: 46%;
+  top: 12%;
+  left: 19%;
+}
+
+.thirdcol2 img {
+  width: 100%;
+  z-index: 2;
+}
+
+.freQt {
+  /* height: 65vw; */
+  max-width: 73vw;
+  margin: auto;
+  padding: 1rem;
+  /* background-color: rgb(216, 132, 23); */
+}
+.freQt h2 {
+  font-size: 3.5rem;
+  color: white;
+  text-align: center;
+  /* padding: 5%; */
+}
+.Questions {
+  /* border: 2px solid red; */
+  background-color: #2d2d2d;
+  color: white;
+  cursor: pointer;
+  margin-top: 1%;
+}
+.flexque:hover {
+  background-color: #494646;
+}
+.Questions .q1 {
+  font-size: 28px;
+}
+
+.answer {
+  border: 1px solid black;
+  font-size: 28px;
+  padding: 15px 27px 15px 27px;
+  display: none;
+}
+.flexque {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 27px 15px 27px;
+}
+.flexque .SpandIcon {
+  font-size: 48px;
+  cursor: pointer;
+}
+.form1 {
+  max-width: 69vw !important;
+  margin: 15px auto;
+}
+.footerstart {
+  /* height: 20vw; */
+  padding: 5% 0%;
+}
+.FooterCenter {
+  max-width: 73vw;
+  /* background-color: red; */
+  margin: auto;
+}
+.CallNo {
+  color: #b3b3b3;
+  /* background-color: red; */
+  /* max-width: 73vw; */
+  margin: auto;
+}
+.CallNo a {
+  color: #b3b3b3;
+}
+.ulfooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.ulfooter li {
+  padding: 19px 0px 0px 0px;
+  list-style: none;
+}
+.lifooter a {
+  color: #b3b3b3;
+}
+.NetIndia {
+  color: #b3b3b3;
+}
+.FooterBtn {
+  margin: 17px 0px;
+  /* padding: 10px 30px 10px 30px; */
+  padding: 10px 20px 10px 14px;
+  background-color: #0f0f0f;
+  color: white;
+  /* font-size: 13px; */
+  border: 0.5px solid white;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .Shadow {
+    height: 100%;
+  }
+  .nav {
+    max-width: 88vw;
+  }
+  .nav .NavBtn1 {
+    padding: 16px 38px 16px 38px;
+  }
+  .NavBtn2 {
+    padding: 16px 38px 16px 38px;
+  }
+  .logo img {
+    width: 20vw;
+  }
+  .content {
+    margin: auto;
+    padding: 7vw;
+  }
+  .content h2 {
+    font-size: 3em;
+  }
+  .line2 {
+    font-size: 2rem;
+  }
+  .line3 {
+    font-size: 2rem;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .form input {
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    margin-right: 0px;
+  }
+  .form ::placeholder {
+    font-size: 18px;
+  }
+  .form .formbtn {
+    font-size: 1em;
+    margin-top: 1em;
+    padding: 15px 20px 15px 20px;
+  }
+  .Firstgrid {
+    height: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 95vw;
+    padding: 30px 0px 30px 0px;
+  }
+
+  .FGridcol1 p {
+    font-size: 1.5rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 50%;
+    text-align: center;
+  }
+
+  .FGridcol2 {
+    padding: 0px 0px 11px 0px;
+    width: 50%;
+  }
+  .Secondgrid {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 95vw;
+    padding: 3rem;
+  }
+  .SGridcol2 h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .SGridcol2 {
+    max-width: 67vw;
+    margin: auto;
+  }
+  .SGridcol2 p {
+    width: 68%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .SGridcol1 {
+    width: 50%;
+    margin: auto;
+  }
+  .innercard {
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    padding: 12px;
+    left: 23%;
+    height: auto;
+    border-radius: 15px;
+  }
+  .CardContent {
+    text-align: center;
+  }
+  .imgcard img {
+    width: 58%;
+  }
+  .thirdgrid {
+    display: block;
+    max-width: 95vw;
+    /* padding: 10%; */
+    padding: 20px;
+  }
+  .thirdcol1 h2 {
+    font-size: 3rem;
+    /* width: 63%; */
+    text-align: center;
+  }
+  .thirdcol1 p {
+    font-size: 2rem;
+    text-align: center;
+    width: 62%;
+  }
+  .thirdcol2 {
+    width: 50%;
+    margin: auto;
+  }
+  .freQt {
+    max-width: 95vw;
+  }
+  .freQt h2 {
+    font-size: 3rem;
+    padding: 0%;
+  }
+  .questionbegin {
+    padding: 3%;
+  }
+  .Questions .q1 {
+    font-size: 1.5rem;
+  }
+  .flexque .SpandIcon {
+    font-size: 2rem;
+  }
+  .answer {
+    font-size: 17px;
+  }
+  .video2 {
+    max-width: 50vw;
+  }
+  .lifooter a {
+    font-size: 16px;
+  }
+  .FooterCenter {
+    max-width: 83vw;
+  }
+  .DowloadBtn {
+    text-align: center;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .nav {
+    max-width: 91%;
+  }
+  .nav .NavBtn1 {
+    padding: 11px 30px 11px 30px;
+  }
+  .NavBtn2 {
+    padding: 11px 30px 11px 30px;
+  }
+  .content {
+    margin: auto;
+    padding: 10vw;
+    max-width: none;
+  }
+  .content h2 {
+    font-size: 2.5em;
+  }
+  .line2 {
+    font-size: 1.6rem;
+  }
+  .line3 {
+    font-size: 1.6rem;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .form input {
+    font-size: 20px;
+    color: white;
+    width: 70%;
+    margin-right: 0px;
+  }
+  .form ::placeholder {
+    font-size: 18px;
+  }
+  .form .formbtn {
+    font-size: 1em;
+    margin-top: 1em;
+    padding: 15px 20px 15px 20px;
+  }
+  .Firstgrid {
+    height: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 95vw;
+    padding: 14px 0px 14px 0px;
+  }
+  .FGridcol1 {
+    margin-top: 24px;
+  }
+
+  .FGridcol1 p {
+    font-size: 1.5rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 50%;
+    text-align: center;
+  }
+
+  .FGridcol2 {
+    padding: 0px 0px 11px 0px;
+    width: 75%;
+  }
+  .Secondgrid {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 95vw;
+  }
+  .SGridcol2 h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .SGridcol2 {
+    max-width: 67vw;
+    margin: 5% auto;
+  }
+  .SGridcol2 p {
+    width: 68%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .SGridcol1 img {
+    width: 70%;
+  }
+  .innercard {
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    padding: 12px;
+    left: 23%;
+    height: auto;
+    border-radius: 15px;
+  }
+  .CardContent {
+    text-align: center;
+  }
+  .DowloadBtn img {
+    width: 14vw;
+  }
+  .imgcard img {
+    width: 58%;
+  }
+  .thirdgrid {
+    display: block;
+    max-width: 95vw;
+    padding: 4rem 0rem;
+  }
+  .thirdcol1 h2 {
+    font-size: 2.5rem;
+    width: 63%;
+    text-align: center;
+  }
+  .thirdcol1 p {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 62%;
+  }
+  .thirdcol2 img {
+    width: 80%;
+  }
+  .freQt {
+    max-width: 95vw;
+    padding: 1rem;
+  }
+  .freQt h2 {
+    font-size: 2.5rem;
+  }
+  .questionbegin {
+    padding: 3%;
+  }
+  .Questions .q1 {
+    font-size: 17px;
+  }
+  .flexque .SpandIcon {
+    font-size: 20px;
+  }
+  .answer {
+    font-size: 17px;
+  }
+  .video2 {
+    max-width: 50vw;
+  }
+  .lifooter a {
+    font-size: 16px;
+  }
+  .FooterCenter {
+    max-width: 83vw;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .mainnav {
+    background-size: cover;
+  }
+  .nav {
+    max-width: 91%;
+  }
+  .nav img {
+    width: 80px;
+  }
+  .nav .NavBtn1 {
+    padding: 10px 9px 10px 9px;
+  }
+  .content h2 {
+    font-size: 2em;
+  }
+  .line2 {
+    font-size: 1.2rem;
+  }
+  .line3 {
+    font-size: 1.3rem;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .form input {
+    font-size: 1rem;
+    color: white;
+    width: 100%;
+    margin-right: 0px;
+  }
+  .form ::placeholder {
+    font-size: 1rem;
+  }
+  .form .formbtn {
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 15px 20px 15px 20px;
+  }
+  .Firstgrid {
+    height: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 95vw;
+  }
+  .FGridcol1 {
+    margin-top: 24px;
+  }
+  .FGridcol1 h2 {
+    font-size: 1.8em;
+  }
+  .FGridcol1 p {
+    font-size: 1rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 69%;
+    text-align: center;
+  }
+
+  .FGridcol2 {
+    padding: 11px 9px 11px 9px;
+  }
+  .Secondgrid {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 95vw;
+  }
+  .SGridcol2 h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .SGridcol2 {
+    max-width: 80%;
+    margin: 5% auto;
+  }
+  .SGridcol2 p {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+  .SGridcol1 img {
+    width: 100vw;
+  }
+  .innercard {
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    height: auto;
+    border-radius: 15px;
+    top: 65%;
+    width: 66%;
+    left: 13%;
+    padding: 0.5rem;
+  }
+  .CardContent .span1 {
+    font-size: 15px;
+  }
+  .DowloadBtn img {
+    width: 14vw;
+  }
+  .imgcard img {
+    width: 67%;
+  }
+  .thirdgrid {
+    display: block;
+    max-width: 95vw;
+    padding: 3rem 0rem;
+  }
+  .thirdcol1 h2 {
+    font-size: 2rem;
+    width: 63%;
+    text-align: center;
+  }
+  .thirdcol1 p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .freQt {
+    max-width: 95vw;
+    padding: 1rem;
+  }
+  .freQt h2 {
+    font-size: 2rem;
+  }
+  .questionbegin {
+    padding: 3%;
+  }
+  .Questions .q1 {
+    font-size: 17px;
+  }
+  .flexque .SpandIcon {
+    font-size: 20px;
+  }
+  .answer {
+    font-size: 17px;
+  }
+  .video2 {
+    max-width: 50vw;
+  }
+  .lifooter a {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .FooterCenter {
+    max-width: 91vw;
+    margin: auto;
+  }
+  .DowloadBtn {
+    text-align: center;
+  }
+  .ulfooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
